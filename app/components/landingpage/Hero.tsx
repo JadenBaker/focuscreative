@@ -107,7 +107,8 @@ function Hero() {
                   whileTap={{ scale : .98 }}
                   transition={{ duration : .3, ease : 'easeInOut'}}
                   className='py-3 px-12 rounded-md border-2 border-[#470787]
-                  bg-white shadow-sm hover:shadow-md w-[100%] sm:w-[200px]'>
+                  bg-white shadow-sm hover:shadow-md w-[100%] sm:w-[200px]
+                  text-black'>
                   Contact Us
                 </motion.button>
               </Link>

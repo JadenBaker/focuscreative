@@ -41,7 +41,7 @@ interface BoxData {
 const Box = ({ text }:BoxData) => {
     return (
         <div className="border-x border-[#470487] w-[300px] text-center">
-            <h3 className="text-lg font-medium px-5 dark:text-white">{text}</h3>
+            <h3 className="text-lg font-medium px-5 dark:text-white text-black">{text}</h3>
         </div>
     )
 }

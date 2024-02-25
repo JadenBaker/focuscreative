@@ -51,7 +51,7 @@ export default function SocialProof() {
                     mt-5 hover:bg-[#470787] hover:text-white
                     dark:text-white dark:bg-[#470787] dark:hover:bg-white
                     dark:hover:text-black dark:hover:border-[#470787] font-medium
-                    dark:border-black'
+                    dark:border-black text-black'
                 >
                     Leave a review
                 </motion.button>

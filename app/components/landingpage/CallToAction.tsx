@@ -6,7 +6,7 @@ export default function CallToAction() {
     return (
         <div className="col-span-8 overflow-x-hidden relative h-[710px] grid grid-cols-8">
             <h1 className="text-4xl font-bold max-w-[400px] sm:max-w-[500px] absolute right-0
-                my-20 px-5 dark:text-white md:max-w-[600px] text-end xl:col-end-8">
+                my-20 px-5 dark:text-white md:max-w-[600px] text-end xl:col-end-8 text-black">
                 Spend <span className="text-[#470787]">More Time</span> with your <span className="text-[#470787]">Clients</span>,
                 while we handle the back end.
             </h1>

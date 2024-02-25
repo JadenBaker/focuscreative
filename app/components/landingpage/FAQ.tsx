@@ -13,7 +13,7 @@ export default function FAQ() {
     
     return (
         <div className="col-span-8 2xl:col-start-3 2xl:col-end-7 my-20 p-5 dark:text-white
-            md:col-start-2 md:col-end-8">
+            md:col-start-2 md:col-end-8 text-black">
             <h2 className="text-3xl text-center">Frequently Asked Questions</h2>
             <ul className="flex flex-col mt-20">
                 <li className="border-b-2 border-[#470787] relative flex-col"

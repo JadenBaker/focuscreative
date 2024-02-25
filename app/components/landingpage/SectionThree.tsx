@@ -11,7 +11,8 @@ export default function SectionThree() {
             lg:items-center lg:space-x-20 lg:max-w-[1200px] lg:m-auto
             lg:mb-40 pt-20">
             <div className='flex-1 flex flex-col items-center px-5'>
-                <h1 className="text-4xl font-bold text-center max-w-[400px] mb-20 dark:text-white">
+                <h1 className="text-4xl font-bold text-center max-w-[400px] mb-20 dark:text-white
+                text-black">
                     Offer your customers an 
                     <span className="text-[#470787]"> Experience </span>
                     they&apos;ll never forget
@@ -28,7 +29,7 @@ export default function SectionThree() {
                     Start Now
                 </motion.button>
             </div>
-            <ul className='flex-1 flex flex-col items-center mt-20 lg:mt-0 dark:text-white px-5'>
+            <ul className='flex-1 flex flex-col items-center mt-20 lg:mt-0 dark:text-white text-black px-5'>
                 <li className='flex items-center'>
                     <div className='h-[50px] w-[50px] bg-[#470787] text-white 
                     font-bold text-lg rounded-[25px] text-center 
