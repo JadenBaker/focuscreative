@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#button-one {
+  --button-color: #470487;
+  overflow: hidden;
+}
+
+#button-one #hamburger {
+  transition: translate 1s, rotate 1s;
+}
+
+#button-one[aria-expanded="true"] #hamburger {
+  rotate: 0.125turn;
+}
+
+#button-one #line {
+  transition: .5s;
+  stroke-dasharray: 60 31 60 300;
+}
+
+#button-one[aria-expanded="true"] #line {
+  stroke-dasharray: 60 105 60 300;
+  stroke-dashoffset: -90;
+}
