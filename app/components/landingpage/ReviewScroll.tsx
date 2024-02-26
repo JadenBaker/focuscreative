@@ -6,7 +6,7 @@ export default function ReviewScroll () {
     return (
         <div className="absolute top-[350px] overflow-x-hidden grid grid-cols-8 mt-20">
             <div className="relative flex overflow-x-hidden max-w-[100%] xl:max-w-[100%]
-                m-auto col-span-8">
+                m-auto col-span-8 ">
                 <div className=" animate-marquee whitespace-nowrap flex">
                     <Box 
                         customerImage="" 

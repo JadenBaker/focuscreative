@@ -4,6 +4,7 @@ import './globals.css';
 import ThemeSwitcher from './components/theme/themeSwitcher';
 import Providers from './components/theme/providers';
 import Header from './components/Header';
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({
           <ThemeSwitcher />
           <Header />
           {children}
+          <Analytics/>
         </Providers>        
       </body>
     </html>

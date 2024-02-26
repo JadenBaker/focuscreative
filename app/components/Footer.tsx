@@ -15,8 +15,8 @@ function Footer() {
         pb-10 sm:pb-0 sm:pl-10 md:pr-5 border-[#8E29EE] mb-20 p-0 xl:col-end-4
         xl:col-start-2 xl:border-l-2'>
             <h1 className='text-xl text-center mb-20'>Contact Us</h1>
-            <p>Phone Number</p>
-            <p>Email</p>
+            <p>Phone Number : 435-272-4650</p>
+            <p>Email : michelle@focuscreativesolutions.com</p>
             <div className=''>
                 Socials
             </div>

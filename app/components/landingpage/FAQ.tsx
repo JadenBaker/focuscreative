@@ -19,60 +19,86 @@ export default function FAQ() {
                 <li className="border-b-2 border-[#470787] relative flex-col"
                     onClick={() => { setOpen(!open); }}>
                     <header className='flex items-center justify-between py-10'>
-                        <h3 className="text-center font-medium">How can I rank higher on google ?</h3>
+                        <h3 className="text-center font-medium">How can you help my business?</h3>
                         {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
                     </header>
                     {open && (
                         <div className='left-0 right-0 top-[100px] h-[250px]'>
-                            Open 
+                            <p className='text-center max-w-[350px] m-auto pt-10 sm:max-w-[450px] md:max-w-[550px]'>
+                                We, as experts, help you by implementing powerful 
+                                marketing strategies to raise brand awareness, 
+                                draw in new clients, increase website traffic, 
+                                and increase sales.
+                            </p>
                         </div>
                     )}
                 </li>
                 <li className="border-b-2 border-[#470787] relative flex-col"
                     onClick={() => { setOpen2(!open2); }}>
                     <header className='flex items-center justify-between py-10'>
-                        <h3 className="text-center font-medium">How can I increase in person store visits ?</h3>
+                        <h3 className="text-center font-medium">How long does it take for marketing efforts to yield results?</h3>
                         {open2 ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
                     </header>
                     {open2 && (
                         <div className='left-0 right-0 top-[100px] h-[250px]'>
-                            Open 2
+                            <p className='text-center max-w-[350px] m-auto pt-10 sm:max-w-[450px] md:max-w-[550px]'>
+                                The timeframe for results varies based on goals, industry dynamics, 
+                                competition, and the chosen strategies. Our team works diligently 
+                                towards achieving your business objectives, with timelines contingent 
+                                upon these factors. However, patience is the key to long term success.
+                            </p>
                         </div>
                     )}
                 </li>
                 <li className="border-b-2 border-[#470787] relative flex-col"
                     onClick={() => { setOpen3(!open3); }}>
                     <header className='flex items-center justify-between py-10'>
-                        <h3 className="text-center font-medium">How can I reach my target audience ?</h3>
+                        <h3 className="text-center font-medium">How is the success of marketing campaigns measured?</h3>
                         {open3 ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
                     </header>
                     {open3 && (
                         <div className='left-0 right-0 top-[100px] h-[250px]'>
-                            Open 3
+                            <p className='text-center max-w-[350px] m-auto pt-10 sm:max-w-[450px] md:max-w-[550px]'>
+                                We measure campaign success using key performance indicators (KPIs) 
+                                and cutting-edge analytics tools. From website visitors to conversion 
+                                quotes and ROI, we provide in-depth analysis that will help you 
+                                understand the impact of your advertising efforts.
+                            </p>
                         </div>
                     )}
                 </li>
                 <li className="border-b-2 border-[#470787] relative flex-col"
                     onClick={() => { setOpen4(!open4); }}>
                     <header className='flex items-center justify-between py-10'>
-                        <h3 className="text-center font-medium">Do you manage social media content ?</h3>
+                        <h3 className="text-center font-medium">Why can I not see pricing packages for your agency?</h3>
                         {open4 ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
                     </header>
                     {open4 && (
                         <div className='left-0 right-0 top-[100px] h-[250px]'>
-                            Open 4
+                            <p className='text-center max-w-[350px] m-auto pt-10 sm:max-w-[450px] md:max-w-[550px]'>
+                                Our pricing varies based on factors such as your business’s size, 
+                                marketing needs, and project scope. We offer 
+                                tailored solutions that are unique to your business and fit your 
+                                budget. Let’s discuss your requirements and create a plan that 
+                                works for you.
+                            </p>
                         </div>
                     )}
                 </li>
                 <li className="border-b-2 border-[#470787] relative flex-col"
                     onClick={() => { setOpen5(!open5); }}>
                     <header className='flex items-center justify-between py-10'>
-                        <h3 className="text-center font-medium">How can my brand be more impactful ?</h3>
+                        <h3 className="text-center font-medium">Do you have experience working with businesses in my industry?</h3>
                         {open5 ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
                     </header>
                     {open5 && (
                         <div className='left-0 right-0 top-[100px] h-[250px]'>
-                            Open 5
+                            <p className='text-center max-w-[350px] m-auto pt-10 sm:max-w-[450px] md:max-w-[550px]'>
+                                We understand the unique challenges and requirements of many industries. 
+                                We also research every industry before starting, to keep up on the 
+                                industry trends which benefit the client’s marketing, and we customize 
+                                our strategies to ensure success in your sector.
+                            </p>
                         </div>
                     )}
                 </li>
