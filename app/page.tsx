@@ -6,7 +6,6 @@ import FAQ from './components/landingpage/FAQ';
 import SectionThree from './components/landingpage/SectionThree';
 import SocialProof from './components/landingpage/SocialProof';
 import Plans from './components/landingpage/Plans';
-import RecentWorks from './components/landingpage/RecentWorks';
 
 export default function Home() {
   return (
