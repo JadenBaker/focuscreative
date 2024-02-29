@@ -2,7 +2,7 @@
 
 const nextConfig = {
     images: {
-        domains: ['t4.ftcdn.net', 't3.ftcdn.net', 'images.pexels.com']
+        remotePatterns: [{hostname : 't4.ftcdn.net'}, {hostname : 't3.ftcdn.net'}, {hostname: 'images.pexels.com'}]
     }
 }
 
