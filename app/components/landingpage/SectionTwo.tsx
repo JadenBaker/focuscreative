@@ -23,18 +23,20 @@ export default function SectionTwo() {
                <span className='block max-w-0 group-hover:max-w-full transition-all duration-200 h-[3px] dark:bg-[#47078 bg-white rounded-[1.5px]'></span>
             </Link>
             <Link href={'/contact'} 
-                className="rounded-md bg-white text-black font-medium hover:bg-[#8E29EE]
-                border-2 border-[#8E29EE] dark:bg-black dark:text-white hover:text-white
+                className="
                 mt-20 dark:hover:bg-[#8E29EE] shadow-sm hover:shadow-md
-                top-[600px] absolute ml-5 2xl:col-start-2 text-center">
+                top-[600px] absolute ml-5 2xl:col-start-2 text-center rounded-md">
                 <motion.button
-                    whileHover={{ scale : 1.02 }}
+                    whileHover={{ scale : 1.05 }}
                     whileTap={{ scale : .95 }}
-                    transition={{ duration : .3, ease : 'easeInOut'}}
-                    className="py-3 w-[250px] rounded-md "
+                    transition={{ duration : .5, ease : 'easeInOut'}}
+                    className="py-3 w-[250px] rounded-md border-2 border-[#8E29EE]
+                    rounded-md bg-white text-black font-medium hover:bg-[#8E29EE]
+                    dark:bg-black dark:text-white hover:text-white dark:hover:bg-[#8E29EE]
+                    "
                     
                 >
-                    Contact Us
+                    Start Now
                 </motion.button>            
             </Link>
             <AutoScroll />

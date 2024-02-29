@@ -69,7 +69,7 @@ function Hero() {
               </clipPath>
               </defs>
             </svg>
-            <svg width="1536" height="1000" className='hidden xl:inline 2xl:' viewBox="0 0 1536 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="1536" height="1000" className='hidden xl:inline 2xl:hidden' viewBox="0 0 1536 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_149_448)">
               <rect width="1536" height="1000" fill="white" className='dark:fill-black'/>
               <path d="M64.0124 216.662C43.8006 197.847 43.8007 167.34 64.0125 148.525L229.75 -5.76482L1057.75 765.04L892.011 919.33C871.799 938.145 839.029 938.145 818.818 919.33L64.0124 216.662Z" fill="#470487"/>
@@ -84,6 +84,19 @@ function Hero() {
               </clipPath>
               </defs>
             </svg>
+            <svg width="1720" height="1000" className='hidden 2xl:inline' viewBox="0 0 1720 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clipPath="url(#clip0_206_2263)">
+              <rect width="1720" height="1000" fill="white" className='dark:fill-black'/>
+              <path d="M64.0124 216.663C43.8006 197.847 43.8007 167.341 64.0125 148.525L1173.75 -884.555L1921.14 -188.788L811.405 844.291C791.193 863.107 758.423 863.107 738.211 844.291L64.0124 216.663Z" fill="#470487"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_206_2263">
+              <rect width="1720" height="1000" fill="white" className='dark:fill-black'/>
+              </clipPath>
+              </defs>
+            </svg>
+
+
             <h1 className='text-4xl font-bold text-white text-center m-auto text-black md:text-white w-[250px] text-end 
               mt-[-450px] sm:mt-[-540px] md:mt-[-700px] lg:mt-[-790px] xl:mt-[-930px] dark:text-white sm:text-center sm:w-[350px]
               '>
@@ -103,9 +116,9 @@ function Hero() {
                 w-[100%] sm:w-[200px]'
               >
                 <motion.button 
-                  whileHover={{ scale : 1.02 }}
-                  whileTap={{ scale : .98 }}
-                  transition={{ duration : .3, ease : 'easeInOut'}}
+                  whileHover={{ scale : 1.05 }}
+                  whileTap={{ scale : .95 }}
+                  transition={{ duration : .5, ease : 'easeInOut'}}
                   className='py-3 px-12 rounded-md border-2 border-[#470787]
                   bg-white shadow-sm hover:shadow-md w-[100%] sm:w-[200px]
                   text-black'>

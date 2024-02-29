@@ -59,7 +59,7 @@ export default function Header() {
                             <GoogleIcon />
                         </motion.button>
                     </Link>
-                    <Link href={'/'} className='hidden sm:inline'>
+                    <Link href={'/https://www.facebook.com/FocusCreativeSolutions'} className='hidden sm:inline'>
                         <motion.button
                             whileHover={{ scale : 1.05 }}
                             whileTap={{ scale : .95 }}

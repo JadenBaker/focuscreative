@@ -2,7 +2,7 @@
 
 const nextConfig = {
     images: {
-        domains: ['t4.ftcdn.net']
+        domains: ['t4.ftcdn.net', 't3.ftcdn.net', 'images.pexels.com']
     }
 }
 

@@ -12,7 +12,7 @@ export default function FAQ() {
     const [open5, setOpen5] = useState(false);
     
     return (
-        <div className="col-span-8 2xl:col-start-3 2xl:col-end-7 my-20 p-5 dark:text-white
+        <div className="col-span-8 2xl:col-start-3 2xl:col-end-7 sm:my-20 p-5 dark:text-white
             md:col-start-2 md:col-end-8 text-black">
             <h2 className="text-3xl text-center">Frequently Asked Questions</h2>
             <ul className="flex flex-col mt-20">

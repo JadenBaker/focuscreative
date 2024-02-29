@@ -14,11 +14,16 @@ export default function SocialProof() {
                     are <span className="text-[#8E28EE]"> Saying </span>
                 </h1>
             </div>
-            <form className="rounded-md left-5 right-5 p-5 bg-white shadow-md hover:shadow-lg
+            <div className='absolute w-[100%] top-[880px] sm:top-[920px] md:top-[940px] xl:top-[1000px] 2xl:pr-[300px]'>
+                <h1 className='text-3xl font-bold text-end px-5 sm:text-center dark:text-white text-black'>
+                    Tell us what <span className='text-[#8E29EE] whitespace-nowrap'>you think.</span>
+                </h1>
+            </div>            
+            <form className="rounded-md left-5 right-5 p-5 bg-white shadow-md hover:shadow-lg dark:bg-opacity-60
                 absolute top-[1040px] border sm:sm:top-[1125px] sm:w-[600px] m-auto lg:top-[1150px]
                 lg:w-[700px] lg:left-[230px] xl:left-[-300px] 2xl:left-0 dark:bg-black dark:border-0">
                 <textarea 
-                    className="w-full h-[200px] border-2 border-gray-200 rounded-md p-5
+                    className="w-full h-[200px] border-2 border-gray-200 rounded-md p-5 min-h-[220px] max-h-[220px]
                     bg-white dark:bg-[#470787] dark:border-black dark:outline-none dark:text-white
                     text-medium dark:placeholder-[#8E28EE] focus:border-[#470787] outline-none"
                     placeholder="Comment here..."
@@ -45,13 +50,12 @@ export default function SocialProof() {
                     />
                 </div>
                 <motion.button
+                    whileHover={{ scale : 1.05 }}
                     whileTap={{ scale : .95 }}
-                    transition={{ duration : .3, ease : 'easeInOut'}}
+                    transition={{ duration : .5, ease : 'easeInOut'}}
                     className='py-3 px-12 rounded-md border-2 border-[#470787]
-                    mt-5 hover:bg-[#470787] hover:text-white
-                    dark:text-white dark:bg-[#470787] dark:hover:bg-white
-                    dark:hover:text-black dark:hover:border-[#470787] font-medium
-                    dark:border-black text-black'
+                    mt-5 hover:bg-[#470787] hover:text-white dark:text-white
+                    dark:bg-[#470787] font-medium dark:bg-black dark:hover:bg-[#470787]'
                 >
                     Leave a review
                 </motion.button>
