@@ -22,7 +22,7 @@ export default function Plans() {
                     border-[#470787] hover:bg-[#470787] dark:bg-black hover:text-white
                     font-medium mt-20 dark:text-white dark:hover:bg-[#470787]">
                         Contact Sales
-                </motion.button>
+                </motion.button> 
             </Link>
             <div className="dark:text-white flex flex-col space-y-20 mt-20 items-center m-auto
                 md:flex-row text-center md:text-start md:space-y-0 md:py-20 lg:space-x-10 mb-20 md:mb-0">
@@ -30,7 +30,7 @@ export default function Plans() {
                     <div className='flex flex-col space-y-10 text-lg px-5'>
                         <h2 className='font-bold text-2xl'>Build your own</h2>
                         <p className='max-w-[400px]'>
-                            Already, have a website? Perfect, let's
+                            Already, have a website? Perfect, let&apos;s
                             make it better together. Contact us to find
                             out how to grow your business today.
                         </p>
