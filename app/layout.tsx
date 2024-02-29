@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Focus Creative',
   description: 'Focus creative is your one stop shop for all your digital marketing needs.',
+  keywords : ['Marketing', 'SEO', 'Digital Marketing', 'Web Design', 'Business Growth']
 }
 
 export default function RootLayout({
