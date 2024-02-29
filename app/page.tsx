@@ -8,7 +8,7 @@ import SocialProof from './components/landingpage/SocialProof';
 import Plans from './components/landingpage/Plans';
 import RecentWorks from './components/landingpage/RecentWorks';
 
-export default async function Home() {
+export default function Home() {
   return (
     <main className='grid grid-cols-8 bg-white dark:bg-black text-black'>
       <Hero />
