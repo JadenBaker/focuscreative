@@ -8,7 +8,7 @@ export default function ReviewScroll () {
     return (
         <div className="absolute top-[190px] overflow-hidden grid grid-cols-8 mt-20">
             <div className="relative flex overflow-x-hidden max-w-[100%] xl:max-w-[100%]
-                m-auto col-span-8 ">
+                m-auto col-span-8 min-h-[540px]">
                 <div className=" animate-marqueeSlow whitespace-nowrap flex py-5">
                     <Box 
                         customerImage="" 
