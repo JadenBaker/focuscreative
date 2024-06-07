@@ -123,15 +123,15 @@ export function Box ({ customerName, review, customerImage, customerTitle }:BoxD
             className="min-w-[340px] max-w-[340px] bg-white mx-5 rounded-xl p-5 text-sm sm:text-[16px]
             md:text-[18px] lg:text-[20px] leading-[22px] border-2 text-black
             shadow-sm dark:bg-black dark:text-white lg:min-w-[500px] lg:max-w-[500px]
-            dark:border-[#470787] hover:shadow-lg border overflow-hidden">
+            dark:border-[#470787] hover:shadow-lg border">
             <header className="flex items-center justify-between space-x-5">
                 <div className="flex flex-col space-y-3">
                     <h1 className="font-bold text-xl">{customerName}</h1>
-                    <h3 className="text-sm font-medium text-wrap whitespace-wrap">{customerTitle}</h3>
+                    <h3 className="text-sm font-medium whitespace-normal">{customerTitle}</h3>
                 </div>
                 {customerImage && <Image src={customerImage} alt={customerName} width={50} height={50} />}
             </header>
-            <p className="text-wrap mt-10 whitespace-wrap">
+            <p className="mt-10 whitespace-normal">
                 {review}
             </p>
         </motion.div>
