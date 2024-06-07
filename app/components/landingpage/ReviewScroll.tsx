@@ -18,7 +18,8 @@ export default function ReviewScroll () {
 
     return (
         <div className="absolute top-[190px] overflow-hidden grid grid-cols-8 mt-20">
-            <div className="flex items-center justify-between col-span-8">
+            <div className="flex items-center justify-between col-span-8 xl:col-start-2
+                xl:col-end-8 xl:px-5 pb-5">
                 <motion.button
                     onClick={slideLeft} 
                     whileHover={{ scale : 1.02 }}
