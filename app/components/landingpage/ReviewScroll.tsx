@@ -120,18 +120,18 @@ export function Box ({ customerName, review, customerImage, customerTitle }:BoxD
         <motion.div 
             whileHover={{ scale : 1.05 }}
             transition={{ duration : 1, ease : 'easeInOut'}}
-            className="w-[340px] bg-white mx-5 rounded-xl p-5 text-sm sm:text-[16px]
+            className="min-w-[340px] max-w-[340px] bg-white mx-5 rounded-xl p-5 text-sm sm:text-[16px]
             md:text-[18px] lg:text-[20px] leading-[22px] border-2 text-black
-            shadow-sm dark:bg-black dark:text-white lg:w-[500px]
+            shadow-sm dark:bg-black dark:text-white lg:min-w-[500px] lg:max-w-[500px]
             dark:border-[#470787] hover:shadow-lg border overflow-hidden">
             <header className="flex items-center justify-between space-x-5">
                 <div className="flex flex-col space-y-3">
                     <h1 className="font-bold text-xl">{customerName}</h1>
-                    <h3 className="text-sm max-w-[250px] font-medium text-wrap">{customerTitle}</h3>
+                    <h3 className="text-sm max-w-[250px] font-medium text-wrap whitespace-wrap">{customerTitle}</h3>
                 </div>
                 {customerImage && <Image src={customerImage} alt={customerName} width={50} height={50} />}
             </header>
-            <p className=" max-w-[280px] sm:max-w-[330px] md:max-w-[400px] text-wrap mt-10">
+            <p className=" max-w-[280px] sm:max-w-[330px] md:max-w-[400px] text-wrap mt-10 whitespace-wrap">
                 {review}
             </p>
         </motion.div>
