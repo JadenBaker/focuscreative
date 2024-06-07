@@ -37,7 +37,7 @@ export default function ReviewScroll () {
                     id='rightarrow'
                     onClick={slideRight}
                     className='min-h-[50px] min-w-[50px] z-10 
-                    sticky right-5 hover:text-blue-500 dark:hover:text-[#470787] 
+                    sticky right-5 hover:text-[#470787] dark:hover:text-[#470787] 
                     dark:text-black bg-white
                     rounded-full'
                     >
