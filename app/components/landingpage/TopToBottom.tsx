@@ -8,13 +8,13 @@ export default function TopToBottom({ backgroundColor }:any) {
                 <Box image="/phones/sotelosOne.png" />
                 <Box image="/phones/sotelosTwo.png" />
                 <Box image="/phones/focusMobileOne.png" />
-                <Box image="" />
+                <Box image="/phones/focusMobileTwo.png" />
             </div>
             <div className="absolute top-0 animate-marquee2BTT whitespace-nowrap flex flex-col space-y-5 mt-5">
                 <Box image="/phones/sotelosOne.png" />
                 <Box image="/phones/sotelosTwo.png" />
                 <Box image="/phones/focusMobileOne.png" />
-                <Box image="" />
+                <Box image="/phones/focusMobileTwo.png" />
             </div>
         </div>
     )

@@ -7,16 +7,16 @@ export default function BottomToTop({ backgroundColor }:any) {
         <div className={backgroundColor === '#470787' ? "relative flex overflow-hidden min-w-[360px] col-span-8 hidden sm:inline px-5 bg-[#470787]" 
             : "relative flex overflow-hidden min-w-[360px] col-span-8 hidden sm:inline px-5"}>
             <div className="animate-marqueeTTB whitespace-nowrap flex flex-col space-y-5">
-                <Box image="" />
-                <Box image="" />
-                <Box image="" />
-                <Box image="" />
+                <Box image="/phones/sotelosOne.png" />
+                <Box image="/phones/sotelosTwo.png" />
+                <Box image="/phones/focusMobileOne.png" />
+                <Box image="/phones/focusMobileTwo.png" />
             </div>
             <div className="absolute top-0 animate-marquee2TTB whitespace-nowrap flex flex-col space-y-5 mt-5">
-                <Box image="" />
-                <Box image="" />
-                <Box image="" />
-                <Box image="" />
+                <Box image="/phones/sotelosOne.png" />
+                <Box image="/phones/sotelosTwo.png" />
+                <Box image="/phones/focusMobileOne.png" />
+                <Box image="/phones/focusMobileTwo.png" />
             </div>
         </div>
     )
