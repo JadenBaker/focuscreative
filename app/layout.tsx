@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   'SEO Marketing', 'SEO Optimization', 'SEO Strategy', 'SEO Tools', 'SEO Techniques', 'SEO Tips'],
   icons : { icon : [ '/favicon.svg' ] },
   openGraph: {
-    images: '/og-image.png',
+    images: '/opengraph-image.png',
   },
 }
 
