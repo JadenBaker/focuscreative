@@ -8,7 +8,7 @@ import { useRef } from 'react';
 
 export default function SectionThree() {
     // const ref = useRef<any>(null)
-    // const isInView = useInView(ref, { once: true })
+    // const isInView = useInView(ref, { once: false })
 
     const cardVariants: Variants = {
         offscreen: {
@@ -51,7 +51,7 @@ export default function SectionThree() {
                 <motion.li 
                     initial="offscreen"
                     whileInView="onscreen"
-                    viewport={{ once: true, amount: 0.8 }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className='flex items-center'>
                     <motion.div 
                         variants={cardVariants}
@@ -77,7 +77,7 @@ export default function SectionThree() {
                 <motion.li 
                     initial="offscreen"
                     whileInView="onscreen"
-                    viewport={{ once: true, amount: 0.8 }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className='flex items-center'>
                     <motion.div 
                         variants={cardVariants}
@@ -131,7 +131,7 @@ export default function SectionThree() {
                 <motion.li 
                     initial="offscreen"
                     whileInView="onscreen"
-                    viewport={{ once: true, amount: 0.8 }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className='flex items-center'>
                     <motion.div 
                         variants={cardVariants}
@@ -164,7 +164,7 @@ export default function SectionThree() {
                 <motion.li 
                     initial="offscreen"
                     whileInView="onscreen"
-                    viewport={{ once: true, amount: 0.8 }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className='flex items-center'>
                     <motion.div 
                         variants={cardVariants}
