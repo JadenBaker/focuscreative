@@ -127,11 +127,11 @@ export function Box ({ customerName, review, customerImage, customerTitle }:BoxD
             <header className="flex items-center justify-between space-x-5">
                 <div className="flex flex-col space-y-3">
                     <h1 className="font-bold text-xl">{customerName}</h1>
-                    <h3 className="text-sm max-w-[250px] font-medium text-wrap whitespace-wrap">{customerTitle}</h3>
+                    <h3 className="text-sm font-medium text-wrap whitespace-wrap">{customerTitle}</h3>
                 </div>
                 {customerImage && <Image src={customerImage} alt={customerName} width={50} height={50} />}
             </header>
-            <p className=" max-w-[280px] sm:max-w-[330px] md:max-w-[400px] text-wrap mt-10 whitespace-wrap">
+            <p className="text-wrap mt-10 whitespace-wrap">
                 {review}
             </p>
         </motion.div>
