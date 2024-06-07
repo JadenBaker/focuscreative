@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   'SEO Services', 'SEO Agency', 'SEO Company', 'SEO Expert', 'SEO Specialist', 'SEO Consultant', 
   'SEO Marketing', 'SEO Optimization', 'SEO Strategy', 'SEO Tools', 'SEO Techniques', 'SEO Tips'],
   icons : { icon : [ '/favicon.svg' ] },
+  openGraph: {
+    images: '/og-image.png',
+  },
 }
 
 export default function RootLayout({
