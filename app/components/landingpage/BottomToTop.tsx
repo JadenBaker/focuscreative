@@ -2,7 +2,6 @@ import Image from "next/image"
 import Link from "next/link"
 
 export default function BottomToTop({ backgroundColor }:any) {
-    console.log(backgroundColor, ' color ')
     return (
         <div className={backgroundColor === '#470787' ? "relative flex overflow-hidden min-w-[360px] col-span-8 hidden sm:inline px-5 bg-[#470787]" 
             : "relative flex overflow-hidden min-w-[360px] col-span-8 hidden sm:inline px-5"}>
@@ -27,7 +26,6 @@ interface BoxData {
 };
 
 const Box = ({ image }:any) => {
-    console.log(image, ' image ')
     return (
         <Image 
             src={image}

@@ -71,7 +71,7 @@ const NavMenu = ({ handleClose, handleClick }:Data) => {
                     <div className={`bg-white text-blue-500 dark:bg-black flex items-center p-1 border-2
                         rounded-full w-16 cursor-pointer flex-shrink-0 relative border-black dark:border-white
                         ${resolvedTheme === "dark" ? "justify-end" : "justify-start"}`}
-                        onClick={() => { console.log('theme : '),  setTheme(resolvedTheme === "dark" ? "light" : "dark")}}
+                        onClick={() => {setTheme(resolvedTheme === "dark" ? "light" : "dark")}}
                     >  
                       <motion.div 
                         className='w-5 h-5 z-0 bg-[#470487] rounded-full ' 

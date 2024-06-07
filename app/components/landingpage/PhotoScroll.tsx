@@ -5,9 +5,6 @@ import React from "react";
 import Link from "next/link";
 
 export default function PhotoScroll({ images, direction } : { images : StaticImageData[], direction? : string }) {
-
-    console.log(images, ' images ');
-    
     return (
         <div className="bg-transparent overflow-x-hidden grid grid-cols-8">
             {direction === 'left' ? (
