@@ -7,7 +7,8 @@ export default function SocialProof() {
     return (
         <div className="col-span-8 bg-[#333333] grid grid-cols-8 my-40 overflow-x-hidden relative bg-white dark:bg-black">
             <div className="bg-[#470787] col-span-8 relative h-[280px] grid grid-cols-8">
-                <h1 className="text-4xl font-bold w-[300px] sm:w-[400px] text-end text-white
+                <h1
+                    className="text-4xl font-bold w-[300px] sm:w-[400px] text-end text-white
                     absolute right-5 xl:col-end-8 mt-10 2xl:col-end-7">
                     Dont just take our word for it,
                     see what other <span className="text-[#8E28EE]"> Customers </span>

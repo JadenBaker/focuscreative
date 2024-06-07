@@ -6,6 +6,8 @@ import FAQ from './components/landingpage/FAQ';
 import SectionThree from './components/landingpage/SectionThree';
 import SocialProof from './components/landingpage/SocialProof';
 import Plans from './components/landingpage/Plans';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import RecentWorks from './components/landingpage/RecentWorks';
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
       <SocialProof />
       <FAQ />
       <Plans />
-      {/* <RecentWorks /> */}
+      <RecentWorks />
       <CallToAction />
       <Footer />
     </main>

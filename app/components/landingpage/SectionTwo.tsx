@@ -8,8 +8,8 @@ import Image from "next/image";
 
 export default function SectionTwo() {
     return ( 
-        <div className="col-span-8 bg-white grid grid-cols-8
-            dark:bg-black flex flex-col overflow-x-hidden relative mt-10 grid gird-cols-8">
+        <div className="col-span-8 grid grid-cols-8
+            dark:bg-black flex flex-col overflow-x-hidden relative ">
             <h1 className="text-4xl font-bold max-w-[400px] 2xl:text-black
                 my-20 text-white absolute top-[150px] px-5 2xl:col-start-2 dark:text-white">
                 Unlock your creative side & build the site you&apos;ve always wanted

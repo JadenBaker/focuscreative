@@ -1,15 +1,19 @@
 'use client'
 
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Link from 'next/link';
 import InstallDesktopIcon from '@mui/icons-material/InstallDesktop';
+import { useRef } from 'react';
 
 export default function SectionThree() {
+    const ref = useRef<any>(null)
+    const isInView = useInView(ref, { once: true })
+
     return (
         <div className="col-span-8 flex flex-col lg:flex-row
             lg:items-center lg:space-x-20 lg:max-w-[1200px] lg:m-auto
-            lg:mb-40 pt-20">
+            lg:mb-40 pt-20 overflow-x-hidden">
             <div className='flex-1 flex flex-col items-center px-5'>
                 <h1 className="text-4xl font-bold text-center max-w-[400px] mb-20 dark:text-white
                 text-black">
@@ -29,8 +33,14 @@ export default function SectionThree() {
                     Start Now
                 </motion.button>
             </div>
-            <ul className='flex-1 flex flex-col items-center mt-20 lg:mt-0 dark:text-white text-black px-5'>
-                <li className='flex items-center'>
+            <ul ref={ref} className='flex-1 flex flex-col items-center mt-20 lg:mt-0 dark:text-white text-black px-5'>
+                <motion.li 
+                    style={{
+                        transform: isInView ? "none" : "translateX(200px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all .5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                    className='flex items-center'>
                     <div className='h-[50px] w-[50px] bg-[#470787] text-white 
                     font-bold text-lg rounded-[25px] text-center 
                     justify-center flex flex-col'> 1 </div>
@@ -45,8 +55,14 @@ export default function SectionThree() {
                             your current traffic
                         </p>
                     </div>
-                </li>
-                <li className='flex items-center'>
+                </motion.li>
+                <motion.li 
+                    style={{
+                        transform: isInView ? "none" : "translateX(200px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 1.0s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                    className='flex items-center'>
                     <div className='h-[50px] w-[50px] bg-[#470787] text-white 
                     font-bold text-lg rounded-[25px] text-center 
                     justify-center flex flex-col'> 2 </div>
@@ -90,8 +106,14 @@ export default function SectionThree() {
                             Ad-Campaigns</Link> 
                         </p>
                     </div>
-                </li>
-                <li className='flex items-center'>
+                </motion.li>
+                <motion.li 
+                    style={{
+                        transform: isInView ? "none" : "translateX(200px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                    className='flex items-center'>
                     <div className='h-[50px] w-[50px] bg-[#470787] text-white 
                     font-bold text-lg rounded-[25px] text-center 
                     justify-center flex flex-col'> 3 </div>
@@ -114,8 +136,14 @@ export default function SectionThree() {
                             Custom Website</Link> 
                         </p>
                     </div>
-                </li>
-                <li className='flex items-center'>
+                </motion.li>
+                <motion.li 
+                    style={{
+                        transform: isInView ? "none" : "translateX(200px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 2.0s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                    className='flex items-center'>
                     <div className='h-[50px] w-[50px] bg-[#470787] text-white 
                     font-bold text-lg rounded-[25px] text-center 
                     justify-center flex flex-col'> 4 </div>
@@ -130,7 +158,7 @@ export default function SectionThree() {
                             . Contact us whenever you need
                         </p>
                     </div>
-                </li>
+                </motion.li>
             </ul>
         </div>
     )

@@ -27,7 +27,7 @@ export default function Header() {
         };
     };
     return(
-        <div className='col-span-8 sticky top-0 bg-white z-10 grid grid-cols-8 h-[50px] 
+        <div className='col-span-8 sticky top-0 bg-white z-50 grid grid-cols-8 h-[50px] 
         shadow-md text-black text-lg font-[Montserat] dark:bg-black'>
             <nav className='col-span-8 xl:col-start-2 xl:col-end-8 grid grid-cols-8 
             items-center relative'>
@@ -39,15 +39,18 @@ export default function Header() {
                     </svg>
                 </button>
 
-                <h1 className='font-[Montserrat] sm:text-xl text-center col-span-8 dark:text-white'>Focus Creative</h1>
+                <h1 className='font-[Montserrat] sm:text-xl text-center col-span-8
+                    text-black dark:text-white md:text-2xl'>
+                    Focus Creative
+                </h1>
                 <div className='flex items-center space-x-5 right-0 absolute h-[50px] pr-5 text-[#470487]'>
-                    <Link href={'https://www.linkedin.com/in/michelle-russell-focuscreative/'}>
+                    <Link href={'https://www.linkedin.com/in/michelle-russell-focuscreative/'} target='_blank'>
                         <motion.button
                             whileHover={{ scale : 1.05 }}
                             whileTap={{ scale : .95 }}
                             transition={{ duration : .3 }}
                         >
-                            <LinkedInIcon />
+                            <LinkedInIcon className='hover:text-black dark:hover:text-white'/>
                         </motion.button>
                     </Link>
                     <Link href={'/'}>
@@ -56,16 +59,16 @@ export default function Header() {
                             whileTap={{ scale : .95 }}
                             transition={{ duration : .3 }}
                         >
-                            <GoogleIcon />
+                            <GoogleIcon className='hover:text-black dark:hover:text-white'/>
                         </motion.button>
                     </Link>
-                    <Link href={'/https://www.facebook.com/FocusCreativeSolutions'} className='hidden sm:inline'>
+                    <Link href={'https://www.facebook.com/FocusCreativeSolutions'} className='hidden sm:inline' target='_blank'>
                         <motion.button
                             whileHover={{ scale : 1.05 }}
                             whileTap={{ scale : .95 }}
                             transition={{ duration : .3 }}
                         >
-                            <FacebookIcon />
+                            <FacebookIcon className='hover:text-black dark:hover:text-white'/>
                         </motion.button>
                     </Link>
                     <Link href={'/'} className='hidden sm:inline'>
@@ -74,7 +77,7 @@ export default function Header() {
                             whileTap={{ scale : .95 }}
                             transition={{ duration : .3 }}
                         >
-                            <InstagramIcon />
+                            <InstagramIcon className='hover:text-black dark:hover:text-white'/>
                         </motion.button>
                     </Link>
                 </div>

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function AutoScroll () {
     return (
-        <div className="absolute top-[19px] bg-white overflow-x-hidden grid grid-cols-8 
+        <div className="absolute top-[19px] sm:top-[-80px] bg-white overflow-x-hidden grid grid-cols-8 
             dark:bg-black border-y-2 mt-20 p-5 border-[#470487]">
             <div className="relative flex overflow-x-hidden max-w-[100%] xl:max-w-[100%] m-auto col-span-8">
                 <div className=" animate-marquee whitespace-nowrap flex">

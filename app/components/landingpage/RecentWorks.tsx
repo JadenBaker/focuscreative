@@ -1,3 +1,5 @@
+'use client'
+
 import PhotoScroll from "./PhotoScroll";
 import Photo1 from "/public/images/site2.jpg";
 import Photo2 from "/public/images/site4.jpg";
@@ -9,6 +11,8 @@ import Photo7 from "/public/images/site9.jpg";
 import Photo8 from "/public/images/site10.jpg";
 import Photo9 from "/public/images/site11.jpg";
 import Photo10 from "/public/images/site12.jpg";
+import { motion } from 'framer-motion';
+import PhotoConverge from "./PhotoConverge";
 
 export default function RecentWorks() {
     const images = [Photo1, Photo2, Photo3, Photo4, Photo5, Photo6, Photo7, Photo8, Photo9, Photo10];
@@ -17,15 +21,8 @@ export default function RecentWorks() {
     return (
         <div className="col-span-8 mb-20">
             <PhotoScroll images={images} direction="left"/>
-            <div className="rounded-md  flex justify-center sm:py-[125px] py-20">
-                <h1 className="w-[250px] sm:w-[300px] text-center text-3xl sm:text-4xl 
-                    font-bold dark:text-white"> Designed by
-                    <span className="text-[#470787]"> Focus Creative </span>
-                </h1>
-            </div>
-            <div className="h-[300px]">
+            <PhotoConverge images={images}/>
             <PhotoScroll images={images2}/>
-            </div>
         </div>
     )
 }

@@ -149,13 +149,7 @@ export function Box ({ customerName, review, customerImage, customerTitle }:BoxD
                     <h1 className="font-bold text-xl">{customerName}</h1>
                     <h3 className="text-sm max-w-[250px] font-medium text-wrap">{customerTitle}</h3>
                 </div>
-                <Image 
-                    src={customerImage} 
-                    alt="customer" 
-                    className="w-[50px] h-[50px] border rounded-full" 
-                    height={50}
-                    width={50}
-                />
+                {customerImage && <Image src={customerImage} alt={customerName} width={50} height={50} />}
             </header>
             <p className=" max-w-[280px] sm:max-w-[330px] md:max-w-[400px] text-wrap mt-10">
                 {review}

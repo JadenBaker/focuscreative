@@ -14,9 +14,7 @@ const config: Config = {
         '3xl' : '1720px',
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'parralax': 'url("/images/parralax.jpg")',
       },
     },
     animation: {
@@ -26,15 +24,17 @@ const config: Config = {
       // Slow right to left
       marqueeSlow: 'marquee 200s linear infinite',
       marquee2Slow: 'marquee2 200s linear infinite',
+
       // For left to right
       marquee3: 'marquee3 100s linear infinite',
       marquee4: 'marquee4 100s linear infinite',
+
       // Top to bottom
-      marqueeTTB: 'marquee5 100s linear infinite',
-      marquee2TTB: 'marquee6 100s linear infinite',
+      marqueeTTB: 'marquee5 50s linear infinite',
+      marquee2TTB: 'marquee6 50s linear infinite',
       // Bottom to Top
-      marqueeBTT: 'marquee6 100s linear infinite',
-      marquee2BTT: 'marquee5 100s linear infinite',
+      marqueeBTT: 'marquee7 50s linear infinite',
+      marquee2BTT: 'marquee8 50s linear infinite',
     },
     keyframes: {
       // For right to left
@@ -48,13 +48,29 @@ const config: Config = {
       },
       // For left to right
       marquee3: {
-        '0%': { transform: 'translateX(0%)' },
-        '100%': { transform: 'translateX(100%)' },
+        '100%': { transform: 'translateX(0%)' },
+        '0%': { transform: 'translateX(-100%)' },
       },
       marquee4: {
-        '0%': { transform: 'translateX(-100%)' },
-        '100%': { transform: 'translateX(0%)' },
+        '100%': { transform: 'translateX(100%)' },
+        '0%': { transform: 'translateX(0%)' },
       },
+      marquee5: {
+        '0%': { transform: 'translateY(0%)' },
+        '100%': { transform: 'translateY(-100%)' },
+      },
+      marquee6: {
+        '0%': { transform: 'translateY(100%)' },
+        '100%': { transform: 'translateY(0%)' },
+      },
+      marquee7 : {
+        '-100%' : { transform : 'translateY(0%)' },
+        '0%' : { transform : 'translateY(-100%)' },
+      },
+      marquee8 : {
+        '0%' : { transform : 'translateY(0%)' },
+        '100%' : { transform : 'translateY(100%)' },
+      }
     },
   },
   plugins: [],
